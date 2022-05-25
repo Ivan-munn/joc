@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+<div class = "topnav">
+	<a class="active" href="home1.html">Home</a>
+	<a href="aboutme.html">About Me</a>
+	<a href="academics.html">Acedemics</a>
+	<a href="#contact">Contact</a>
+</div>
+
+</head>
+<body>
+
+<h2>Ivan Munn</h2>
+<p>Welcome to my website</p>
+
+<div class="container">
+  <img src="IMG_3327.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Ivan Munn</div>
+  </div>
+</div>
+
+</body>
+</html>
